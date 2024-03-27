@@ -1,0 +1,41 @@
+cat <<EOF
+
+Constants:
+----------
+R  =  8.31441     J/(K mol)
+   =  1.98719     cal/(K mol)
+   =  0.0861734   meV/K
+   =  5.98435e-6  e^2/(Angstrom*K)
+   =  8.20575e-2  atm L/(K mol)
+F  =  9.64846e4   C/mol
+
+1 KB =                     2^10 bytes
+1 MB =           2^10 KB = 2^20 bytes
+1 GB = 2^10 MB = 2^20 KB = 2^30 bytes
+(2^10 = 1024)
+
+Conversions:
+------------
+1 cal = 4.184 J
+1 kJ/mol = 0.0964846 meV
+1 Hartree = 627.5095 kcal/mol = 27.2116 eV = 2625.50 kJ/mol
+1 pK  =  ln(10) RT  =  2.30259 RT
+
+Values at 300K:
+---------------
+1 RT  =  25.8520     meV
+      =  2.49432     kJ/mol
+      =  0.596158    kcal/mol
+      =  1.79531e-3  e^2/Angstrom
+1 pK  =  59.5265     meV
+      =  5.74339     kJ/mol
+      =  1.37270     kcal/mol
+      =  4.13384e-3  e^2/Angstrom
+
+Formulae:
+---------
+Inverse Debye length:
+  kappa  =  50.31 * sqrt((I/M) / ((T/K) * epsout)) * Angstrom^(-1)
+         =  503.1 * sqrt((I/M) / ((T/K) * epsout)) * nm^(-1)
+
+EOF
